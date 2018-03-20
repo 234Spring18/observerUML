@@ -20,7 +20,7 @@ public class JordanDisplay implements Observer, DisplayElement {
     if(humidity < 70){
       System.out.println("You won't sweat too much today");
     }
-    else if(humidity >= 70 < 90){
+    else if(humidity >= 70 && humidity < 90){
       System.out.println("It's really steamy out there");
     }
     else {
