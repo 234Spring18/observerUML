@@ -3,7 +3,7 @@ package observer.weather;
 import java.util.*;
 
 public class FrancisDisplay implements Observer, DisplayElement {
-    private float humidity;
+    private float temp;
     private WeatherData weatherData;
 
     public FrancisDisplay(WeatherData weatherData) {
@@ -12,7 +12,7 @@ public class FrancisDisplay implements Observer, DisplayElement {
     }
 
     public void update(float temp, float humidity, float pressure) {
-	this.humidity = humidity;
+	this.temp = temp;
 	display();
     }
 
