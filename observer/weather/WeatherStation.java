@@ -12,7 +12,13 @@ public class WeatherStation {
 			new CurrentConditionsDisplay(weatherData);
 		StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
 		ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+        BenDisplay benDisplay = new BenDisplay(weatherData);
+        CaelinDisplay caelinDisplay = new CaelinDisplay(weatherData);
+        FrancisDisplay francisDiplay = new FrancisDisplay(weatherData);
+        GeorgeDisplay georgeDisplay = new GeorgeDisplay(weatherData);
 		JordanDisplay jordanDisplay = new JordanDisplay(weatherData);
+        NischalDisplay nischalDisplay = new NischalDisplay(weatherData);
+        TimDisplay timDisplay = new TimDisplay(weatherData);
 
 		weatherData.setMeasurements(80, 65, 30.4f);
 		weatherData.setMeasurements(82, 70, 29.2f);
