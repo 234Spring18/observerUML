@@ -2,11 +2,11 @@ package observer.weather;
 
 import java.util.*;
 
-public class JordanDisplay implements Observer, DisplayElement {
+public class GeorgeDisplay implements Observer, DisplayElement {
     private float humidity;
     private WeatherData weatherData;
 
-    public JordanDisplay(WeatherData weatherData) {
+    public GeorgeDisplay(WeatherData weatherData) {
 	this.weatherData = weatherData;
 	weatherData.registerObserver(this);
     }
@@ -20,7 +20,7 @@ public class JordanDisplay implements Observer, DisplayElement {
 	if(humidity < 50){
 	    System.out.println("Low humidity today.");
 	}
-	else if(humidity >= 50 < 80){
+	else if(humidity >= 50 && humidity < 80){
 	    System.out.println("Moderate humidity today.");
 	}
 	else {
