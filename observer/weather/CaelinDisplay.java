@@ -14,6 +14,7 @@ public class CaelinDisplay implements Observer, DisplayElement {
     
     public void update(float temp, float humidity, float pressure) {
         this.humidity = humidity;
+        this.temp = temp;
         display();
     }
     
